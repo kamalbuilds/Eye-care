@@ -1,7 +1,7 @@
 import cv2
 import cvzone
 
-cap = cv2.VideoCapture('Video.mp4')
+cap = cv2.VideoCapture('mixkit-green-eye-blinking-4257.mp4')
 
 while True:
     success, img = cap.read()

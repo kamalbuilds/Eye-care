@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Poppins:wght@300;400;500;600;700&display=swap');
 
 body {
@@ -25,8 +26,111 @@ list-style-type: none;
      text-decoration: none;
      display: inline-block;
  }
+
+ h1 {
+     font-family: 'poppins', sans-serif;
+     font-weight: 700;
+     color: #38422d;
+ }
+ p {
+     font-size: 16px;
+     font-weight: 400;
+     line-height: 24px;
+     color: #747e74;
+ }
+ span {
+     display: contents;
+     color: #fe5f59;
+ }
+
+.navbar-area {
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+}
+.navbar {
+    position: relative;
+    padding: 20px 0;
+}
+
  .navbar-brand .image {
   max-width: 150px;
   
  }
+
+ .navbar-nav .nav-item {
+     position: relative;
+     margin-left: 40px;
+ }
+ .navbar-nav .nav-item .nav-link {
+    position: relative;
+    margin-left: 10px 0;
+    font-size: 18px;
+    font-weight: 400;
+    color: #38424D;
+}
+.navbar-nav .nav-item .nav-link.active,
+.navbar-nav .nav-item .nav-link:hover {
+color: #ff846f;
+}
+.navbar-nav .nav-item .nav-link::before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    bottom: 0;
+    left: 50%;
+    border-radius: 50%;
+    background-color: #38424d;
+    opacity: 0;
+    transition: all .3 ease-out 0s;
+}
+.navbar-nav .nav-item .nav-link:active::before,
+.navbar-nav .nav-item .nav-link:hover::before {
+    opacity: 1;
+}
+/* ---------- home css ------------ */
+.header-hero {
+    position: relative;
+    top: 0;
+    height: 800px;
+    background-position: bottom center;
+}
+
+.header-hero-content {
+    position: relative;
+}
+.header-hero-content .header-title {
+    font-size:  42px;
+    color: #38424d;
+}
+.header-hero-content .text {
+    margin-top: 30px;
+}
+
+.header-hero-content ul {
+    margin-top: 30px;
+    
+}
+.main-btn {
+display: inline-block;
+padding: 0 25px;
+font-size: 16px;
+font-weight: 500;
+text-align: center;
+line-height: 55px;
+border: 2px solid #0898e8;
+border-radius: 5px;
+background-color: #0898ef;
+color: #fff;
+
+}
+
+.main-btn:hover{
+    background-color: rgba(8,152,231,0.7);
+    color: #fff;
+    border-color: transparent;
+}
+
 
